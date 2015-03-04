@@ -1,0 +1,11 @@
+image = imread('img14.jpg');    // 
+gray = rgb2gray(image);
+image = imresize(image, [480 640]);
+
+file = fopen('img14.txt', 'wt');
+for i = 1:640
+    for j = 1:480
+        fprintf(file, '%d ', image(j,i));
+    end
+end
+fclose(file);
