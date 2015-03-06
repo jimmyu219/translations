@@ -7,6 +7,7 @@ function [ out ] = roi( img )
 % ---------------------------------------------------------------
 % Get white projector image
 % ---------------------------------------------------------------
+img = imread('images/img12.jpg');
 
 % Get image dimensions
 imgROWS = size(img, 1);
@@ -126,7 +127,7 @@ finalRight = finalCOLS - finalLeft;
 % New image with 5% edge buffer
 final = final(finalTop:finalBot, finalLeft:finalRight);
 
-final = im2bw(final, 0.5);
+final = im2bw(final, 0.85);
 imshow(final);
 % Return roi
 out = final;
