@@ -20,7 +20,7 @@ int main(){
 	
 
 	FILE *file = fopen("img17.txt", "r");
-	int image[16777216];
+	int image[307200];	// 480 x 640
 	int i=0;
 	int j=0;
 	int k=0;
@@ -120,6 +120,7 @@ int main(){
 	// Generate summations of rows and cols
 	// This generated a matrix of the sum of all rows
 //	row = sum(crop, 2);
+
 	row_max = max(row);
 	row_avg = mean(row);
 

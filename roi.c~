@@ -20,7 +20,7 @@ int main(){
 	
 
 	FILE *file = fopen("img17.txt", "r");
-	int image[16777216];
+	int image[307200];	// 480 x 640
 	int i=0;
 	int j=0;
 	int k=0;
@@ -155,16 +155,16 @@ int main(){
 
 	// Get array where row_ind(1) == first part of white area
 	// row_ind(end) should be the end of the projector area
-	
+//	row_indices = find(row);	
 
 
 	// Get array where col_ind(1) == first part of white area
 	// col_ind(end should be the end of the projector area
-	
+//	col_indices = find(col);	
 
 
 	// Create crop, region of the projector
-	
+//	final = crop(row_indices(1):row_indices(end), col_indices(1):col_indices(end));	
 
 	
 	// Get cropped image dimensions
