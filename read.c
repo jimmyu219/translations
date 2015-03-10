@@ -110,9 +110,9 @@ int main(){
 
 	// print img matrix array
 	// should be just the black box with the digit
-	for (cols = 0; rows < 640; cols++) {
+	for (cols_binary[col_index_beg]; cols_binary[col_index_end]; cols++) {
 		printf("\n");
-		for (rows = 0; rows < 480; rows++) {
+		for (rows_binary[row_index_beg]; rows_binary[row_index_beg]; rows++) {
 			printf("%d ", img[rows][cols]);
 		}
 		printf("\n");
