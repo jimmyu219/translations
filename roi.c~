@@ -120,6 +120,7 @@ int main(){
 	// Generate summations of rows and cols
 	// This generated a matrix of the sum of all rows
 //	row = sum(crop, 2);
+
 	row_max = max(row);
 	row_avg = mean(row);
 
